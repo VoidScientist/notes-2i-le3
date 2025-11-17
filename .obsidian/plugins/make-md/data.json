@@ -39,16 +39,15 @@
   "deleteFileOption": "trash",
   "expandedSpaces": [
     "//le3_automatisme",
-    "/",
     "//Sources/Sources/le3_recherche_op",
     "//Rough Notes",
     "//Sources/Sources/le3_automatisme",
     "//Sources/Sources/le3-ari",
-    "//Tags",
     "//Sources",
     "Tags",
     "Programmation - Non-Scolaire",
-    "Rough Notes"
+    "Rough Notes",
+    "/"
   ],
   "expandFolderOnClick": true,
   "spacesFolder": "Tags",
