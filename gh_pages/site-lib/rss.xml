@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[notes-2i-le3]]></title><description><![CDATA[Obsidian digital garden]]></description><link>http://github.com/dylang/node-rss</link><image><url>site-lib/media/favicon.png</url><title>notes-2i-le3</title><link></link></image><generator>Webpage HTML Export plugin for Obsidian</generator><lastBuildDate>Mon, 17 Nov 2025 20:27:45 GMT</lastBuildDate><atom:link href="site-lib/rss.xml" rel="self" type="application/rss+xml"/><pubDate>Mon, 17 Nov 2025 20:27:35 GMT</pubDate><ttl>60</ttl><dc:creator></dc:creator><item><title><![CDATA[ADC]]></title><description><![CDATA[Deux grands domaines de l'électronique Analogique Infinité de valeurs dans un intervalle donné
+Grandeur temporelle continue Numérique Nombre fini de valeurs dans un intervalle donné
+Grandeur temporelle échantillonnée Convertisseurs Numérique -&gt; Analogique (DAC)
+Analogique -&gt; Numérique (ADC) Caractéristiques d'un ADC Nombre de bits
+Plage de conversion (ou tension de pleine échelle)
+Quantum
+Formule entre tension de pleine échelle et quantum
+Règle de conversion
+Durée de conversion Erreurs Erreur d'offset (DC Offset Error) Erreur de gain (DC Gain Error) Non linéarité intégrale (Integral Non Linearity : INL) Non linéarité différentielle (Differential Non Linearity : DNL) Erreur d'offset
+Le code binaire 0 ne correspond pas forcément à une tension voisine de zéro en entrée. Cette tension est la tension de décalage ou erreur de décalage ou erreur d'offset.
+Erreur de gain
+L'erreur de gain (DC Gain Error) est la différence de pente de conversion (exprimée sur la dernière transition)
+Non linéarité intégrale
+L'erreur de linéarité est l'erreur qui reste après correction des deux précédentes.
+Durée de conversion
+Lorsqu'on numérise un signal, on envoie à l'ADC un ordre de conversion (START), et on récupère la valeur binaire en sortie au terme d'un délai appelé durée de conversion. Pour maintenir constante la tension en entrée de l'ADC durant toute la durée de conversion, on insère un échantillonneur bloqueur avant le convertisseur.
+]]></description><link>electronique-d&apos;instrumentation/adc.html</link><guid isPermaLink="false">Electronique d&apos;instrumentation/ADC.md</guid><pubDate>Mon, 17 Nov 2025 19:50:50 GMT</pubDate></item><item><title><![CDATA[Amplificateur Différentiel]]></title><description><![CDATA[Définition
+Un amplificateur différentiel est un amplificateur électronique dont le signal de sortie est proportionnel à la différence entre deux signaux d'entrée. C'est un comparateur linéaire à courant continu.
+Objectif
+Obtenir une tension de sortie référencée par rapport à la masse.
+Formule amplificateur différentiel idéal est appelé le gain différentiel. est une tension de décalage imposée par un circuit externe.
+Warning
+Un amplificateur différentiel idéal n'existe pas, on doit alors changer les formules.
+Formule amplificateur différentiel réel est appelé le gain de mode commun.
+Remarque
+Plutôt que le gain de mode commun , on préfère utiliser la notion de taux de réjection de mode commun. Le taux de réjection de mode commun (Common mode rejection ratio) est défini par: Expression Finale ]]></description><link>electronique-d&apos;instrumentation/amplificateur-différentiel.html</link><guid isPermaLink="false">Electronique d&apos;instrumentation/Amplificateur Différentiel.md</guid><pubDate>Mon, 17 Nov 2025 19:50:50 GMT</pubDate></item><item><title><![CDATA[Capteurs]]></title><description><![CDATA[Définition Originale
+(Norme NF X07001 de mai 1970 relative au vocabulaire des instruments de mesure)
+Elément d'un appareil de mesure servant à la prise d'informations relatives à la grandeur physique à mesurer. Définition Actuelle
+Le capteur est l'élément capital et le premier maillon d'une chaîne d'acquisition. Il a pour rôle de transformer la grandeur physique à mesurer, et le contenu de son information, en une autre grandeur physique accessible aux sens humains (grandeur visuelle, auditive, olfactive, tactile ou gustative) ou aux maillons suivants de la chaîne d'acquisition (très souvent un signal électrique sous forme de tension, de courant ou de charge, ou d'impédance).
+Définition d'un capteur
+En anglais, le capteur est appelé sensor. "Sense" est un terme d'origine latine qui signifie sentir, percevoir, et désigne à l'origine l'action des sens humains. L'être humain peut ressentir les stimulations de son environnement comme la lumière, les couleurs, les sons, la chaleur, les odeurs ou les goûts grâce à ses yeux, ses oreilles, sa peau, son nez et sa langue. On disait autrefois que les phénomènes non mesurables étaient impossibles à analyser, ils étaient par la même inutilisables. Mais l'être humain de nos jours ne s'appuie plus seulement sur ses propres organes sensoriels. Ses fonctions sensorielles se trouvent considérablement augmentées grâce au développement de toutes sortes de capteurs propres à la mesure et l'analyse.
+]]></description><link>electronique-d&apos;instrumentation/capteurs.html</link><guid isPermaLink="false">Electronique d&apos;instrumentation/Capteurs.md</guid><pubDate>Mon, 17 Nov 2025 19:50:50 GMT</pubDate></item><item><title><![CDATA[Classe de précision]]></title><description><![CDATA[Définition
+Un appareil de mesure est caractérisé au moyen d'un nombre appelé indice de classe, qui représente la limite supérieure de l'erreur absolue intrinsèque (c'est à dire à l'appareil seul utilisé dans les conditions de référence). L'indice de classe exprime l'erreur absolue en centièmes de la plus grande indication que peut donner un appareil.
+Exemples de classes Classe 0.1 ou 0.2: appareils dits étalons
+Classe 0.5: appareils de laboratoire
+Classe 1.5 ou 2.5: appareils de contrôle ]]></description><link>electronique-d&apos;instrumentation/classe-de-précision.html</link><guid isPermaLink="false">Electronique d&apos;instrumentation/Classe de précision.md</guid><pubDate>Mon, 17 Nov 2025 19:50:50 GMT</pubDate></item><item><title><![CDATA[Domaine de non-destruction]]></title><description><![CDATA[Contexte
+Les contraintes mécaniques, thermiques ou électriques entraînent des modifications des spécifications métrologiques des capteurs données par le constructeur. Il est donc indispensable que l'utilisateur soit averti des diverses limites d'utilisation d'un capteur. Chaque domaine est défini par les valeurs limites du mesurande et des autres grandeurs physiques.
+Définition
+Le domaine de non destruction est défini par les valeurs limites que peuvent atteindre le mesurande et les autres grandeurs sans qu'il y ait destruction du capteur, mais dans lequel certaines de ses spécifications métrologiques sont altérées de manière permanente. L'altération des spécifications métrologiques est irréversible.
+]]></description><link>electronique-d&apos;instrumentation/domaine-de-non-destruction.html</link><guid isPermaLink="false">Electronique d&apos;instrumentation/Domaine de non-destruction.md</guid><pubDate>Mon, 17 Nov 2025 19:50:50 GMT</pubDate></item><item><title><![CDATA[Domaine de non-détérioration]]></title><description><![CDATA[Contexte
+Les contraintes mécaniques, thermiques ou électriques entraînent des modifications des spécifications métrologiques des capteurs données par le constructeur. Il est donc indispensable que l'utilisateur soit averti des diverses limites d'utilisation d'un capteur. Chaque domaine est défini par les valeurs limites du mesurande et des autres grandeurs physiques.
+Définition
+Le domaine de non détérioration est défini par les valeurs limites que peuvent atteindre le mesurande et les autres grandeurs sans que les spécifications métrologiques restent altérées après disparition des surcharges appliquées. L'altération des spécifications métrologiques est réversible.
+]]></description><link>electronique-d&apos;instrumentation/domaine-de-non-détérioration.html</link><guid isPermaLink="false">Electronique d&apos;instrumentation/Domaine de non-détérioration.md</guid><pubDate>Mon, 17 Nov 2025 19:50:50 GMT</pubDate></item><item><title><![CDATA[Domaine nominal d'emploi]]></title><description><![CDATA[Contexte
+Les contraintes mécaniques, thermiques ou électriques entraînent des modifications des spécifications métrologiques des capteurs données par le constructeur. Il est donc indispensable que l'utilisateur soit averti des diverses limites d'utilisation d'un capteur. Chaque domaine est défini par les valeurs limites du mesurande et des autres grandeurs physiques.
+Définition
+Le domaine nominal d'emploi, défini par les valeurs limites que peuvent atteindre le mesurande et les autres grandeurs, est le domaine dans lequel les spécifications métrologiques sont garanties. Il correspond aux conditions normales d'utilisation. Dans ce domaine, par exemple, l'erreur de mesure reste inférieure à la valeur de précision donnée par le constructeur.
+]]></description><link>electronique-d&apos;instrumentation/domaine-nominal-d&apos;emploi.html</link><guid isPermaLink="false">Electronique d&apos;instrumentation/Domaine nominal d&apos;emploi.md</guid><pubDate>Mon, 17 Nov 2025 19:50:50 GMT</pubDate></item><item><title><![CDATA[Electronique d'instrumentation]]></title><description><![CDATA[Abstract
+Cette section contient toutes les notes en rapport avec la matière "Electronique et instrumentation"
+]]></description><link>electronique-d&apos;instrumentation/electronique-d&apos;instrumentation.html</link><guid isPermaLink="false">Electronique d&apos;instrumentation/Electronique d&apos;instrumentation.md</guid><pubDate>Mon, 17 Nov 2025 19:50:50 GMT</pubDate></item><item><title><![CDATA[Etendue de mesure]]></title><description><![CDATA[Définition
+C'est le terme utilisé en pratique pour définir quantitativement l'intervalle des valeurs extrêmes du mesurande dans le domaine nominal d'emploi du capteur. La valeur maximale définit la pleine échelle (PE) ou full-scale en anglais (FS).
+]]></description><link>electronique-d&apos;instrumentation/etendue-de-mesure.html</link><guid isPermaLink="false">Electronique d&apos;instrumentation/Etendue de mesure.md</guid><pubDate>Mon, 17 Nov 2025 19:50:50 GMT</pubDate></item><item><title><![CDATA[Finesse]]></title><description><![CDATA[Définition de la finesse d'un système physique
+C'est l'aptitude de ce système physique à effectuer des mesures sans perturber le système physique global dans lequel il est inséré.
+Définition de la finesse d'un capteur
+On appelle finesse la qualité du capteur permettant d'estimer son influence sur la valeur du mesurande.
+Remarque
+En toute rigueur, l'observateur perturbe fatalement un système lorsqu'il intervient au sein même du système sur lequel il effectue les mesures et les observations.
+Exemple
+Mesurer la température dans une enceinte de capacité calorifique (pour un élément du système, sa capacité calorifique permet de quantifier sa capacité à s'échauffer) avec un thermomètre (ou thermoscope) de capacité calorifique . Si le milieu a une température initiale , si on apporte au milieu une quantité de chaleur , la température finale de l'ensemble vérifiera Donc et sont proches si est négligeable devant . Remarque Globale
+On peut généralement considérer trois cas: L'erreur de finesse est négligeable
+L'erreur de finesse n'est pas négligeable mais peut être estimée: il est alors possible de corriger le résultat et de connaître le mesurande, abstraction faite du capteur.
+La valeur du mesurande prise en compte par l'utilisateur est celle qui est effectivement mesurée, telle qu'elle résulte pour partie de l'influence du capteur. (le capteur fait partie intégrante du système) <a data-href="Finesse" href="electronique-d'instrumentation/finesse.html" class="internal-link" target="_self" rel="noopener nofollow">Finesse</a> vs <a data-href="Sensibilité" href="electronique-d'instrumentation/sensibilité.html" class="internal-link" target="_self" rel="noopener nofollow">Sensibilité</a>
+Pour quantité de capteurs, finesse et sensibilité sont des qualités antagonistes: c'est le cas pour les capteurs composites à cause du corps d'épreuve. La perturbation sur le mesurande est d'autant plus petite que la déformation ou le déplacement du corps d'épreuve sont faible ; alors que la sensibilité est d'autant plus grande que la déformation ou le déplacement du corps d'épreuve est grand.
+Méthode sans contact mécanique
+La réaction du capteur sur le mesurande peut être annulée par des méthodes de mesure sans contact mécanique : la liaison entre le capteur et l'objet support du mesurande est assurée par un rayonnement : électromagnétique: lumière, micro ondes
+acoustique: ultrasons ]]></description><link>electronique-d&apos;instrumentation/finesse.html</link><guid isPermaLink="false">Electronique d&apos;instrumentation/Finesse.md</guid><pubDate>Mon, 17 Nov 2025 19:50:50 GMT</pubDate></item><item><title><![CDATA[Fonction d'un capteur]]></title><description><![CDATA[Fonction Capteur
+La fonction d'un capteur est de fournir une information électrique dont l'amplitude et l'évolution dans le temps sont analogues à la grandeur et à l'évolution dans le temps d'un seul paramètre naturel qui est le mesurande.
+]]></description><link>electronique-d&apos;instrumentation/fonction-d&apos;un-capteur.html</link><guid isPermaLink="false">Electronique d&apos;instrumentation/Fonction d&apos;un capteur.md</guid><pubDate>Mon, 17 Nov 2025 19:50:50 GMT</pubDate></item><item><title><![CDATA[Grandeur d'influence]]></title><description><![CDATA[Définition
+Une grandeur d'influence est une grandeur autre que le mesurande qui impacte la sortie d'un capteur.
+]]></description><link>electronique-d&apos;instrumentation/grandeur-d&apos;influence.html</link><guid isPermaLink="false">Electronique d&apos;instrumentation/Grandeur d&apos;influence.md</guid><pubDate>Mon, 17 Nov 2025 19:50:50 GMT</pubDate></item><item><title><![CDATA[Jauge de contrainte]]></title><description><![CDATA[Définition
+Une jauge de contrainte est un capteur dont la résistance varie selon la force appliquée. Elle convertit la force, la pression, la tension, le poids, etc. en une variation de la résistance électrique qui peut ensuite être mesurée.
+]]></description><link>electronique-d&apos;instrumentation/jauge-de-contrainte.html</link><guid isPermaLink="false">Electronique d&apos;instrumentation/Jauge de contrainte.md</guid><pubDate>Mon, 17 Nov 2025 19:50:50 GMT</pubDate></item><item><title><![CDATA[Mesurande]]></title><description><![CDATA[Définition
+La grandeur physique (déplacement, température, pression...) objet du mesurage est désignée comme le mesurande (m). La grandeur physique résultat du mesurage est aussi appelée la mesure.
+]]></description><link>electronique-d&apos;instrumentation/mesurande.html</link><guid isPermaLink="false">Electronique d&apos;instrumentation/Mesurande.md</guid><pubDate>Mon, 17 Nov 2025 19:50:50 GMT</pubDate></item><item><title><![CDATA[Plage de conversion]]></title><description><![CDATA[Définition
+La plage de conversion (ou tension de pleine échelle) du convertisseur (ADC) est la gamme de tension sur laquelle le convertisseur délivrera en sortie un nombre fini de codes numériques.
+]]></description><link>electronique-d&apos;instrumentation/plage-de-conversion.html</link><guid isPermaLink="false">Electronique d&apos;instrumentation/Plage de conversion.md</guid><pubDate>Mon, 17 Nov 2025 19:50:50 GMT</pubDate></item><item><title><![CDATA[Portées]]></title><description><![CDATA[Définition
+Valeurs limites du mesurande correspondant à l'étendue de mesure.
+]]></description><link>electronique-d&apos;instrumentation/portées.html</link><guid isPermaLink="false">Electronique d&apos;instrumentation/Portées.md</guid><pubDate>Mon, 17 Nov 2025 19:50:50 GMT</pubDate></item><item><title><![CDATA[Quantum]]></title><description><![CDATA[Définition
+Le quantum (ou LSB*) de l'ADC est la largeur de l'intervalle de valeurs de tension d'entrée pour laquelle correspond un même nombre binaire. Le quantum s'exprime en unité de tension (V, mV, µV, ...). Le quantum correspond toujours à une valeur théorique.
+]]></description><link>electronique-d&apos;instrumentation/quantum.html</link><guid isPermaLink="false">Electronique d&apos;instrumentation/Quantum.md</guid><pubDate>Mon, 17 Nov 2025 19:50:50 GMT</pubDate></item><item><title><![CDATA[Résolution]]></title><description><![CDATA[Définitions Plus petit changement du mesurande détectable par le système
+Plus petite variation du mesurande qu'il est possible d'observer Attention
+La résolution est souvent supérieure qualitativement aux autres caractéristiques d'un capteur. Ce n'est pas parce que la mesure varie très finement qu'elle est juste dans sa valeur absolue. La résolution n'est pas la précision.
+]]></description><link>electronique-d&apos;instrumentation/résolution.html</link><guid isPermaLink="false">Electronique d&apos;instrumentation/Résolution.md</guid><pubDate>Mon, 17 Nov 2025 19:50:50 GMT</pubDate></item><item><title><![CDATA[Sensibilité]]></title><description><![CDATA[Définition
+Dans l'étendue de mesure, la sensibilité d'un capteur s'exprime par le quotient d'une variation de la grandeur de sortie par la variation du mesurande.
+Remarque
+Si deux différents sur deux plages de mesurande alors le capteur est non-linéaire.
+<a data-href="Finesse" href="electronique-d'instrumentation/finesse.html" class="internal-link" target="_self" rel="noopener nofollow">Finesse</a> vs <a data-href="Sensibilité" href="electronique-d'instrumentation/sensibilité.html" class="internal-link" target="_self" rel="noopener nofollow">Sensibilité</a>
+Pour quantité de capteurs, finesse et sensibilité sont des qualités antagonistes: c'est le cas pour les capteurs composites à cause du corps d'épreuve. La perturbation sur le mesurande est d'autant plus petite que la déformation ou le déplacement du corps d'épreuve sont faible ; alors que la sensibilité est d'autant plus grande que la déformation ou le déplacement du corps d'épreuve est grand.
+]]></description><link>electronique-d&apos;instrumentation/sensibilité.html</link><guid isPermaLink="false">Electronique d&apos;instrumentation/Sensibilité.md</guid><pubDate>Mon, 17 Nov 2025 19:50:50 GMT</pubDate></item><item><title><![CDATA[Sensibilité réduite]]></title><description><![CDATA[Définition
+La sensibilité réduite s’exprime comme étant le rapport de la plage de
+variation totale de la sortie à la tension d’alimentation (appelée aussi tension
+d’excitation). Exemple concret
+Ainsi, un capteur, ayant une sensibilité réduite de 2 mV/V et alimenté avec une tension d’excitation d’un volt, voit sa sortie évoluer sur une plage de 2 mV pendant que l’entrée évolue d’un bout à l’autre de l’étendue de mesure. Le même capteur alimenté avec une tension d’excitation de 12 volts, verra sa sortie évoluer de 24 mV (soit 12 V × 2 mV/V) dans les mêmes conditions. ]]></description><link>electronique-d&apos;instrumentation/sensibilité-réduite.html</link><guid isPermaLink="false">Electronique d&apos;instrumentation/Sensibilité réduite.md</guid><pubDate>Mon, 17 Nov 2025 19:50:50 GMT</pubDate></item><item><title><![CDATA[Transducteur]]></title><description><![CDATA[Définition
+Un transducteur est un dispositif convertissant un signal physique en un autre.
+]]></description><link>electronique-d&apos;instrumentation/transducteur.html</link><guid isPermaLink="false">Electronique d&apos;instrumentation/Transducteur.md</guid><pubDate>Mon, 17 Nov 2025 19:50:50 GMT</pubDate></item><item><title><![CDATA[Bienvenue]]></title><description><![CDATA[Bienvenue !
+Ce projet documentaire vise à regrouper les notes des cours de LE3 afin de faciliter et optimiser les révisions.
+Pour qui ?
+Ce dépôt vise à aider ceux qui veulent réviser avec des moyens numériques et souhaitent partager leurs méthodes de travail avec les autres.
+Remarque
+Si les méthodes ci-dessous ne vous conviennent pas, n'hésitez pas à en ajouter de nouvelles. Toutefois, pour les débuts du projet, mieux vaudrait rester sur des bases simples.
+Afin de gagner du temps et de réviser un peu plus efficacement, ce dépôt utilisera <a data-tooltip-position="top" aria-label="https://obsidian.md/" rel="noopener nofollow" class="external-link is-unresolved" href="https://obsidian.md/" target="_self">obsidian</a> pour mettre en forme les notes, tandis que le partage se fera via <a data-tooltip-position="top" aria-label="https://github.com/" rel="noopener nofollow" class="external-link is-unresolved" href="https://github.com/" target="_self">Github</a>.Parmi les méthodes possibles, voici celles qui sont / seront supportées dans l'avenir :Note
+Normalement les plugins seront automatiquement ajoutés lorsque vous clonerez le dépôt, mais dans le doute. Excalidraw (notes manuscrites)
+Iconize (les icônes c'est zoli)
+Kanban (si besoin d'organisation)
+Make.md (permet la séparation en espaces)
+Quick latex (parce qu'écrire du latex à la main c'est chiant)
+Astuce Avant toutes contributions sur la branche principale, n'hésitez pas à créer votre propre branche et de faire une pull request plus tard.
+Sachant que l'objectif du projet est de pouvoir réviser en vue des exams, il est important qu'on fasse un petit peu attention à ce qu'on y ajoute.Ce pourquoi, voici quelques règles afin de s'assurer que tout se passe bien :
+Ajouter des notes propres uniquement.
+Séparer les concepts en notes différentes.
+Signaler l'utilisation de LLMs.
+Sourcer toutes infos externes aux polys / fichiers de cours.
+Faire vérifier/relire les infos.
+Utiliser les fonctions d'obsidian (liens entre notes, tags..)
+Ajouter des fichiers pour d'autres logiciels dans les branches adéquates.
+(Cette liste changera probablement, tant pour faciliter le procéder que pour utiliser d'autres fonctions de plugins comme les kanban.)Voilà voilà, on survivra peut être un peu mieux comme ça.]]></description><link>bienvenue.html</link><guid isPermaLink="false">Bienvenue.md</guid><pubDate>Mon, 17 Nov 2025 19:50:50 GMT</pubDate></item></channel></rss>
