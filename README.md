@@ -1,6 +1,3 @@
----
-sticker: ""
----
 > [!IMPORTANT]
 > Ce projet documentaire vise à regrouper les notes des cours de `LE3` afin de faciliter et optimiser les révisions.
 
