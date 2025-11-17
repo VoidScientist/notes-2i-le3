@@ -8,7 +8,7 @@
 
 | Matières                           | Progression  | Validé par | Contributeurs |
 | ---------------------------------- | ------------ | ---------- | ------------- |
-| [[Electronique d'instrumentation]] | Complète (?) |            | Louis A.      |
+| Electronique d'instrumentation | Complète (?) |            | Louis A.      |
 
 ## Fonctionnalités
 
