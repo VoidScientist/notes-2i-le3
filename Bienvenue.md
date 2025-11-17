@@ -12,6 +12,7 @@ sticker: emoji//1f44b
 | Matières                           | Progression  | Validé par | Contributeurs |
 | ---------------------------------- | ------------ | ---------- | ------------- |
 | [[Electronique d'instrumentation]] | Complète (?) |            | Louis A.      |
+| [[Programmation Orientée Objet]]   | 50%          |            | Louis A.      |
 
 ## Fonctionnalités
 
